@@ -35,7 +35,6 @@ function MonPokedex() {
     const deletePokedex= async (e)=>{
       e.preventDefault()
       const res = await axios.get(serv+'/api/pokeDelete?caretaking=&information=&autorize=&ipssi=&warning=')
-      console.log(res.data)
       if(res.data.info === true){
         alert('info='+res.data.result)
       }

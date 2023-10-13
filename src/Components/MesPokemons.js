@@ -32,7 +32,6 @@ const MesPokemons=()=>{
     const getPokemon=async(res)=>{
        res.map(async(item)=>{
           const result=await axios.get(item.url)
-          console.log(result.data)
           setPokeData(state=>{
               state=[...state,result.data]
               state.sort((a,b)=>a.id>b.id?1:-1)
