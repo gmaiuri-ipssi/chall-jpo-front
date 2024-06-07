@@ -12,10 +12,7 @@ const MesPokemons=()=>{
     const [pokeData,setPokeData]=useState([]);
     const [Chargement,setChargement]=useState(true);
     const [url,setUrl]=useState("http://localhost:8000/api/pokemon")
-    //const [url,setUrl]=useState("https://api-poke.ipssi.cloud")
-    const [nextUrl,setNextUrl]=useState();
-    const [previousUrl, setPreviousUrl]= useState()
-
+    //const [url,setUrl]=useState("https://api-poke.ipssi.cloud/api/pokemon")
     useEffect(()=>{
         localStorage.setItem('information', 'LiT');
         getAllPokemon();
